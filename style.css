@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #009090;
+}
 #calc{
+    margin: 50px auto;
     width: 500px;
     height: 500px;
+    border: solid 2px #055;
     background-color: #008080;
     display: flex;
     flex-wrap: wrap;
