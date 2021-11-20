@@ -6,9 +6,7 @@ body {
     background-color: #009090;
 }
 #calc{
-    margin: 50px auto;
-    width: 500px;
-    height: 500px;
+    margin: 10vh auto;
     border: solid 2px #055;
     background-color: #008080;
     display: flex;
@@ -40,3 +38,38 @@ input[type="button"]{
     background-color: #008d8d;
     border-color: #008d8d;
 }
+
+@media (orientation: portrait){
+    @media only screen and (min-width: 769px) {
+        #calc {
+            width: 500px;
+            height: 500px;
+        }
+    }
+    
+    /* Tablet and under */
+    @media only screen and (max-width: 768px) {
+        #calc {
+            width: calc(100vw - 4px);
+            height: calc(80vh - 4px);
+        }
+    }
+}
+
+@media (orientation: landscape){
+    @media only screen and (min-width: 769px) {
+        #calc {
+            width: 500px;
+            height: 500px;
+        }
+    }
+    
+    /* Tablet and under */
+    @media only screen and (max-width: 768px) {
+        #calc {
+            width: calc(100vw - 4px);
+            height: calc(80vh - 4px);
+        }
+    }
+}
+
